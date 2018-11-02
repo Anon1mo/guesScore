@@ -4,7 +4,7 @@ A phone app, which lets a user predict scores of Premier League football matches
 Used technologies:
 1. Ionic Cordova - a phone app
 2. Node.js - REST Api + Authentication using Passport.js
-3. mongoDB - noSQL database
+3. MongoDB - a NoSQL database
 
 ## How to use
 1. Copy the repository
