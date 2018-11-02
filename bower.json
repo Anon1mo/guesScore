@@ -1,0 +1,12 @@
+{
+  "name": "guesscore",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Piotr Jakubowski"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true
+}

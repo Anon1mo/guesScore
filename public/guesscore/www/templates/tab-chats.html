@@ -1,0 +1,14 @@
+<ion-view view-title="Ranking">
+  <ion-content>
+    <div class="row" style="text-align: center">
+      <div class="col">Miejsce</div>
+      <div class="col col-50">Użytkownik</div>
+      <div class="col">Liczba punktów</div>
+    </div>
+    <div class="row" style="text-align: center" ng-repeat="user in users">
+      <div class="col button button-positive">{{$index+1}}</div>
+      <div class="col col-50 button button-outline button-positive">{{user.username}}</div>
+      <div class="col button button-outline button-calm">{{user.points | number: 1}}</div>
+    </div>
+  </ion-content>
+</ion-view>

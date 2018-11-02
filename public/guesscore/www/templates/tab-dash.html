@@ -1,0 +1,36 @@
+<ion-view cache-view="false" view-title="Mecze">
+  <ion-content style="text-align: center" class="padding">
+    <div ng-if="!storage.sent">
+    <h2 style="text-align: center">Wytypuj zwycięzcow {{fixture}} kolejki Barclays Premier League</h2>
+    <div class="card" ng-repeat="mecz in mecze.fixtures">
+      <div class="item item-divider item-calm">
+        {{mecz.homeTeamName}} vs. {{mecz.awayTeamName}}
+        <p>{{mecz.date | date:"MM/dd/yyyy 'o godzinie' HH:mm"}}</p>
+      </div>
+      <div class="item item-text-wrap">
+        <form name="myForm">
+          <label for="mySelect">Obstawiasz, że wygra:</label>
+          <select name="mySelect" id="mySelect"
+                  ng-options="option for option in mecz.options.availableOptions"
+                  ng-model="mecz.options.selectedOption"></select>
+        </form>
+      </div>
+      <div class="item item-divider">
+        Mecz nr {{$index+1}}
+      </div>
+    </div>
+    <button class="button button-balanced button-block" ng-click="add()">
+      Wyślij
+    </button>
+    </div>
+    <div ng-if="storage.sent">
+      <h2 style="text-align: center">Ostatni mecz w tej kolejce zaczyna sie o {{mecze.fixtures[9].date | date:"MM/dd/yyyy 'o godzinie' HH:mm"}}</h2>
+      <h3>Sprawdz wyniki po zakonczeniu meczu!</h3>
+      <button ng-click="check()" class="button button-block button-assertive">
+        Sprawdz
+      </button>
+      <p ng-if="user">Masz: {{user.points | number: 1}} punktow</p>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view view-title="Tabela ligowa">
+  <ion-content>
+    <ion-list>
+      <div class="list">
+
+        <div class="row positive-bg">
+          <div class="col">Pozycja</div>
+          <div class="col">Nazwa drużyny</div>
+          <div class="col">Rozegrane Gry</div>
+          <div class="col">Punkty</div>
+          <div class="col">Wygrane</div>
+          <div class="col">Remisy</div>
+          <div class="col">Porazki</div>
+
+        </div>
+
+        <div class="row" ng-repeat="druzyna in mecze.standing">
+          <div class="col">{{druzyna.position}}</div>
+          <div class="col">{{druzyna.teamName}}</div>
+          <div class="col">{{druzyna.playedGames}}</div>
+          <div class="col">{{druzyna.points}}</div>
+          <div class="col">{{druzyna.wins}}</div>
+          <div class="col">{{druzyna.draws}}</div>
+          <div class="col">{{druzyna.losses}}</div>
+
+        </div>
+
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
