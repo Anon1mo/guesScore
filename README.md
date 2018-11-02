@@ -8,6 +8,7 @@ Used technologies:
 
 ## How to use
 1. Copy the repository
+
 In the terminal:
 2. Run `npm install -g ionic cordova`
 3. Run `npm install` in the main directory
