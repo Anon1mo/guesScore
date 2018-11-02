@@ -1,5 +1,5 @@
 # guesScore
-A phone app, which lets a user predict scores for Premier League matches, get points for well predicted games and compare the scores with all users in a leaderboard.
+A phone app, which lets a user predict scores of Premier League football matches, get points for well predicted games and compare the scores with all users in a leaderboard.
 Used technologies:
 1. Ionic Cordova - a phone app
 2. Node.js - REST Api + Authentication using Passport.js
