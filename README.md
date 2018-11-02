@@ -10,6 +10,7 @@ Used technologies:
 1. Copy the repository
 
 In the terminal:
+
 2. Run `npm install -g ionic cordova`
 3. Run `npm install` in the main directory
 4. Run `cd public/guesscore` and `npm install`
